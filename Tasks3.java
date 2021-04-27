@@ -49,15 +49,15 @@ public class Tasks3 {
         Создайте функцию, которая берет массив целых чисел, суммирует четные и нечетные
         числа отдельно, а затем возвращает разницу между суммой четных и нечетных чисел. */
     public static int warOfNumbers(int[] nums) {
-        int even_sum = 0;
-        int odd_sum = 0;
+        int chet_sum = 0;
+        int nechet_sum = 0;
         for (int num: nums){
             if (num%2 == 0)
-                even_sum += num;
+                chet_sum += num;
             else
-                odd_sum += num;
+               nechet_sum += num;
         }
-        return Math.abs(even_sum - odd_sum);
+        return Math.abs(chet_sum - nechet_sum);
     }
 
     /* 5. Учитывая строку, создайте функцию для обратного обращения. Все буквы в
